@@ -22,18 +22,20 @@ const Hero = () => {
         <div className="max-w-3xl">
           <div className="animate-fade-up">
             <span className="inline-block text-gold uppercase tracking-[0.3em] text-sm font-medium mb-6">
-              Excellence in Legal Representation
+              Your Complete Tax Compliance Partner
             </span>
             
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-cream leading-tight mb-6">
-              Protecting Your Rights with{" "}
-              <span className="text-gradient-gold">Unwavering Dedication</span>
+              Simplifying{" "}
+              <span className="text-gradient-gold">Indian Taxation</span>{" "}
+              For You
             </h1>
             
             <p className="text-cream/80 text-lg md:text-xl leading-relaxed mb-10 max-w-2xl">
-              For over 25 years, our firm has been a trusted advocate for clients
-              facing complex legal challenges. We combine expertise with compassion
-              to deliver exceptional results.
+              Navigating the intricate landscape of Indian taxation can be daunting. 
+              At Hariq & Co, we simplify this complexity by offering expert-led, 
+              tailored services—so you can stay compliant, stress-free, and focused 
+              on what matters most.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-16">
@@ -42,7 +44,7 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Button>
               <Button variant="heroOutline" size="xl">
-                Our Practice Areas
+                Our Tax Services
               </Button>
             </div>
           </div>
@@ -52,21 +54,21 @@ const Hero = () => {
             <div className="flex items-center gap-4">
               <Shield className="w-10 h-10 text-gold" />
               <div>
-                <span className="block font-serif text-3xl text-cream">500+</span>
-                <span className="text-cream/60 text-sm">Cases Won</span>
+                <span className="block font-serif text-3xl text-cream">5000+</span>
+                <span className="text-cream/60 text-sm">ITRs Filed</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Award className="w-10 h-10 text-gold" />
               <div>
-                <span className="block font-serif text-3xl text-cream">25+</span>
+                <span className="block font-serif text-3xl text-cream">15+</span>
                 <span className="text-cream/60 text-sm">Years Experience</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <Users className="w-10 h-10 text-gold" />
               <div>
-                <span className="block font-serif text-3xl text-cream">1000+</span>
+                <span className="block font-serif text-3xl text-cream">2000+</span>
                 <span className="text-cream/60 text-sm">Happy Clients</span>
               </div>
             </div>

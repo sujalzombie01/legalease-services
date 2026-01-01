@@ -2,12 +2,12 @@ import { Button } from "@/components/ui/button";
 import { CheckCircle } from "lucide-react";
 
 const features = [
-  "Personalized attention for every case",
+  "Personalized tax planning strategies",
   "Transparent communication throughout",
-  "Proven track record of success",
-  "No fees unless we win your case",
-  "Available 24/7 for emergencies",
-  "Multilingual legal support",
+  "Proven track record of compliance",
+  "Digital filing support & paperless process",
+  "Available for urgent tax matters",
+  "Expert team of CAs & tax professionals",
 ];
 
 const About = () => {
@@ -21,17 +21,17 @@ const About = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-8">
                 <blockquote className="text-cream font-serif text-xl italic mb-4">
-                  "Justice is not just about the law—it's about protecting the
-                  people who put their trust in us."
+                  "Our mission is to provide hassle-free tax compliance, personalized 
+                  advisory, and complete digital filing support with clarity and confidence."
                 </blockquote>
                 <cite className="text-gold text-sm not-italic">
-                  — James Sterling, Founding Partner
+                  — Hariq & Co Team
                 </cite>
               </div>
             </div>
             {/* Accent Box */}
             <div className="absolute -bottom-6 -right-6 bg-gold p-6 rounded-lg shadow-gold hidden lg:block">
-              <span className="font-serif text-4xl text-navy-dark block">25+</span>
+              <span className="font-serif text-4xl text-navy-dark block">15+</span>
               <span className="text-navy-dark/80 text-sm">Years of Excellence</span>
             </div>
           </div>
@@ -42,14 +42,14 @@ const About = () => {
               Why Choose Us
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-4 mb-6">
-              Committed to Your Success
+              Your Trusted Tax Partner
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              At Sterling & Associates, we understand that legal matters can be
-              overwhelming. That's why we take a client-first approach, combining
-              decades of legal expertise with genuine care for the people we serve.
-              Our team of dedicated attorneys works tirelessly to achieve the best
-              possible outcomes for our clients.
+              At Hariq & Co Legal Advisory Firm, we understand that tax matters can be 
+              overwhelming. That's why we take a client-first approach, combining decades 
+              of expertise with genuine care. Whether you're an entrepreneur, salaried 
+              employee, or investor—our expert team ensures you stay compliant and 
+              worry-free, with clarity and confidence.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">

@@ -2,28 +2,28 @@ import { Linkedin, Mail } from "lucide-react";
 
 const team = [
   {
-    name: "James Sterling",
-    role: "Founding Partner",
-    specialty: "Criminal Defense",
-    initials: "JS",
+    name: "Hariq Ahmed",
+    role: "Founder & Principal Advisor",
+    specialty: "Tax Strategy & Compliance",
+    initials: "HA",
   },
   {
-    name: "Sarah Mitchell",
-    role: "Senior Partner",
-    specialty: "Family Law",
-    initials: "SM",
+    name: "Priya Sharma",
+    role: "Senior Tax Consultant",
+    specialty: "GST & Indirect Taxes",
+    initials: "PS",
   },
   {
-    name: "Michael Chen",
-    role: "Partner",
-    specialty: "Business Law",
-    initials: "MC",
+    name: "Rajesh Kumar",
+    role: "Chartered Accountant",
+    specialty: "Income Tax & ITR Filing",
+    initials: "RK",
   },
   {
-    name: "Emily Rodriguez",
-    role: "Associate",
-    specialty: "Personal Injury",
-    initials: "ER",
+    name: "Ananya Patel",
+    role: "Tax Associate",
+    specialty: "TDS & Compliance",
+    initials: "AP",
   },
 ];
 
@@ -37,11 +37,11 @@ const Team = () => {
             Meet Our Team
           </span>
           <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-4 mb-6">
-            Experienced Legal Professionals
+            Expert Tax Professionals
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Our attorneys bring decades of combined experience and a passion for
-            justice to every case they handle.
+            Our team of Chartered Accountants and tax experts brings decades of 
+            combined experience in Indian taxation and compliance.
           </p>
         </div>
 

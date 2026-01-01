@@ -1,4 +1,4 @@
-import { Scale, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Calculator, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -8,19 +8,19 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <a href="#home" className="flex items-center gap-3 mb-6">
-              <Scale className="w-8 h-8 text-gold" />
+              <Calculator className="w-8 h-8 text-gold" />
               <div>
                 <span className="font-serif text-lg font-semibold text-cream block">
-                  Sterling & Associates
+                  Hariq & Co
                 </span>
                 <span className="text-xs text-cream/50 tracking-widest uppercase">
-                  Attorneys at Law
+                  Legal Advisory Firm
                 </span>
               </div>
             </a>
             <p className="text-cream/60 text-sm leading-relaxed mb-6">
-              Dedicated to providing exceptional legal services with integrity,
-              expertise, and compassion.
+              Dedicated to providing hassle-free tax compliance, personalized advisory, 
+              and complete digital filing support for individuals and businesses.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-navy-light rounded-full flex items-center justify-center hover:bg-gold transition-colors group">
@@ -38,11 +38,11 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Practice Areas */}
+          {/* Tax Services */}
           <div>
-            <h4 className="font-serif text-lg text-cream mb-6">Practice Areas</h4>
+            <h4 className="font-serif text-lg text-cream mb-6">Tax Services</h4>
             <ul className="space-y-3">
-              {["Criminal Defense", "Personal Injury", "Family Law", "Real Estate", "Business Law", "Estate Planning"].map((item) => (
+              {["Income Tax Filing", "GST Compliance", "TDS Management", "Capital Gains Tax", "Advance Tax", "Professional Tax"].map((item) => (
                 <li key={item}>
                   <a href="#services" className="text-cream/60 hover:text-gold transition-colors text-sm">
                     {item}
@@ -56,7 +56,7 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg text-cream mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {["About Us", "Our Team", "Case Results", "Testimonials", "Blog", "Contact"].map((item) => (
+              {["About Us", "Our Team", "Client Testimonials", "Tax Resources", "Blog", "Contact"].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-cream/60 hover:text-gold transition-colors text-sm">
                     {item}
@@ -70,16 +70,16 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg text-cream mb-6">Contact Info</h4>
             <address className="not-italic space-y-3 text-cream/60 text-sm">
-              <p>123 Justice Avenue, Suite 500</p>
-              <p>New York, NY 10001</p>
+              <p>123 Business Park, Tower B</p>
+              <p>Mumbai, Maharashtra 400001</p>
               <p className="pt-2">
-                <a href="tel:5551234567" className="hover:text-gold transition-colors">
-                  (555) 123-4567
+                <a href="tel:+919876543210" className="hover:text-gold transition-colors">
+                  +91 98765 43210
                 </a>
               </p>
               <p>
-                <a href="mailto:contact@sterlinglaw.com" className="hover:text-gold transition-colors">
-                  contact@sterlinglaw.com
+                <a href="mailto:info@hariqco.com" className="hover:text-gold transition-colors">
+                  info@hariqco.com
                 </a>
               </p>
             </address>
@@ -90,7 +90,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-navy-light">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-cream/40 text-sm">
-              © 2026 Sterling & Associates. All rights reserved.
+              © 2026 Hariq & Co Legal Advisory Firm. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-cream/40 hover:text-gold text-sm transition-colors">

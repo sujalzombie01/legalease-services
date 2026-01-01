@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Scale } from "lucide-react";
+import { Menu, X, Calculator } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,13 +19,13 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-3">
-            <Scale className="w-8 h-8 text-gold" />
+            <Calculator className="w-8 h-8 text-gold" />
             <div className="flex flex-col">
               <span className="font-serif text-xl font-semibold text-cream tracking-wide">
-                Sterling & Associates
+                Hariq & Co
               </span>
               <span className="text-xs text-cream/60 tracking-widest uppercase">
-                Attorneys at Law
+                Legal Advisory Firm
               </span>
             </div>
           </a>
