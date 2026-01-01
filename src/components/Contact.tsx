@@ -19,12 +19,12 @@ const Contact = () => {
               Get In Touch
             </span>
             <h2 className="font-serif text-3xl md:text-4xl text-cream mt-4 mb-6">
-              Ready to Discuss Your Case?
+              Ready to Simplify Your Taxes?
             </h2>
             <p className="text-cream/70 leading-relaxed mb-10 max-w-md">
-              Contact us today for a free, confidential consultation. Our team is
-              ready to listen to your concerns and help you understand your legal
-              options.
+              Contact us today for a free consultation. Our expert team is ready 
+              to help you navigate the complexities of Indian taxation with 
+              confidence and ease.
             </p>
 
             <div className="space-y-6 mb-10">
@@ -35,8 +35,8 @@ const Contact = () => {
                 <div>
                   <h4 className="text-cream font-medium mb-1">Our Office</h4>
                   <p className="text-cream/60 text-sm">
-                    123 Justice Avenue, Suite 500<br />
-                    New York, NY 10001
+                    123 Business Park, Tower B<br />
+                    Mumbai, Maharashtra 400001
                   </p>
                 </div>
               </div>
@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-cream font-medium mb-1">Call Us</h4>
-                  <p className="text-cream/60 text-sm">(555) 123-4567</p>
+                  <p className="text-cream/60 text-sm">+91 98765 43210</p>
                 </div>
               </div>
 
@@ -57,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-cream font-medium mb-1">Email Us</h4>
-                  <p className="text-cream/60 text-sm">contact@sterlinglaw.com</p>
+                  <p className="text-cream/60 text-sm">info@hariqco.com</p>
                 </div>
               </div>
 
@@ -68,8 +68,8 @@ const Contact = () => {
                 <div>
                   <h4 className="text-cream font-medium mb-1">Office Hours</h4>
                   <p className="text-cream/60 text-sm">
-                    Mon-Fri: 9:00 AM - 6:00 PM<br />
-                    Emergency line available 24/7
+                    Mon-Sat: 10:00 AM - 7:00 PM<br />
+                    Tax season extended hours available
                   </p>
                 </div>
               </div>
@@ -91,7 +91,7 @@ const Contact = () => {
                     type="text"
                     id="firstName"
                     className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
-                    placeholder="John"
+                    placeholder="Rahul"
                   />
                 </div>
                 <div>
@@ -102,7 +102,7 @@ const Contact = () => {
                     type="text"
                     id="lastName"
                     className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
-                    placeholder="Doe"
+                    placeholder="Sharma"
                   />
                 </div>
               </div>
@@ -115,7 +115,7 @@ const Contact = () => {
                   type="email"
                   id="email"
                   className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
-                  placeholder="john@example.com"
+                  placeholder="rahul@example.com"
                 />
               </div>
 
@@ -127,38 +127,38 @@ const Contact = () => {
                   type="tel"
                   id="phone"
                   className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors"
-                  placeholder="(555) 123-4567"
+                  placeholder="+91 98765 43210"
                 />
               </div>
 
               <div>
                 <label htmlFor="service" className="block text-sm text-muted-foreground mb-2">
-                  Type of Legal Service
+                  Type of Tax Service
                 </label>
                 <select
                   id="service"
                   className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors text-foreground"
                 >
                   <option value="">Select a service</option>
-                  <option value="criminal">Criminal Defense</option>
-                  <option value="personal-injury">Personal Injury</option>
-                  <option value="family">Family Law</option>
-                  <option value="real-estate">Real Estate Law</option>
-                  <option value="business">Business Law</option>
-                  <option value="estate">Estate Planning</option>
+                  <option value="income-tax">Income Tax Filing</option>
+                  <option value="gst">GST Registration & Filing</option>
+                  <option value="tds">TDS Compliance</option>
+                  <option value="capital-gains">Capital Gains Tax</option>
+                  <option value="advance-tax">Advance Tax Planning</option>
+                  <option value="professional-tax">Professional Tax</option>
                   <option value="other">Other</option>
                 </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm text-muted-foreground mb-2">
-                  Briefly Describe Your Case
+                  Briefly Describe Your Requirements
                 </label>
                 <textarea
                   id="message"
                   rows={4}
                   className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-colors resize-none"
-                  placeholder="Tell us about your situation..."
+                  placeholder="Tell us about your tax requirements..."
                 />
               </div>
 
