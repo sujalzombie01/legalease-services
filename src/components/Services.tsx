@@ -8,7 +8,8 @@ import {
   CreditCard, 
   CalendarClock, 
   FileSpreadsheet, 
-  Landmark 
+  Landmark,
+  ArrowUpRight
 } from "lucide-react";
 
 const services = [
@@ -16,99 +17,111 @@ const services = [
     icon: Receipt,
     title: "Income Tax",
     description:
-      "Whether you're salaried or freelancer, we assist in accurate income declarations, applying deductions (80C, 80D, etc.), and timely ITR filing for zero penalties and maximum savings.",
+      "Complete ITR filing with accurate declarations, deductions (80C, 80D), and maximum tax savings.",
   },
   {
     icon: TrendingUp,
-    title: "Capital Gains Tax",
+    title: "Capital Gains",
     description:
-      "Profits from real estate, shares, or other assets may attract capital gains tax. We compute accurate liabilities, apply exemptions (Section 54, 54F), and structure your gains for tax efficiency.",
+      "Expert computation of capital gains with exemptions under Section 54 and 54F for optimal efficiency.",
   },
   {
     icon: Percent,
     title: "Dividend Tax",
     description:
-      "Understanding TDS rules and tax implications on dividends is vital. We help you track income, manage deductions, and ensure proper compliance under the new tax regime.",
+      "Navigate TDS rules and new tax regime implications on dividends with complete compliance.",
   },
   {
     icon: Building2,
     title: "GST Compliance",
     description:
-      "From registration to monthly/quarterly returns and input tax credits—we help you stay audit-ready and compliant with GST regulations at all times.",
+      "End-to-end GST registration, returns, input tax credits, and audit-ready documentation.",
   },
   {
     icon: CreditCard,
     title: "TDS Management",
     description:
-      "Ensure correct TDS deductions, timely payments, and accurate record-keeping. We help you avoid penalties and notices with comprehensive TDS management.",
+      "Accurate TDS deductions, timely payments, and record-keeping to avoid penalties.",
   },
   {
     icon: FileSpreadsheet,
-    title: "TDS Return Filing",
+    title: "TDS Returns",
     description:
-      "Filing Form 24Q, 26Q, or 27Q is mandatory for deductors. We handle quarterly submissions, validate data, and ensure flawless filing through TRACES.",
+      "Quarterly filing of Form 24Q, 26Q, 27Q through TRACES with data validation.",
   },
   {
     icon: FileText,
-    title: "ITR-3 & ITR-4 Filing",
+    title: "ITR-3 & ITR-4",
     description:
-      "Choosing the correct ITR form for profession, business, or presumptive tax is critical. We help select, fill, and file your ITR accurately with all documentation.",
+      "Correct form selection for business, profession, or presumptive tax with full documentation.",
   },
   {
     icon: CalendarClock,
     title: "Advance Tax",
     description:
-      "If your tax liability exceeds ₹10,000/year, advance tax applies. We calculate due amounts across four installments and help you pay on time to avoid interest under 234B/234C.",
+      "Calculated installments to avoid interest under Sections 234B and 234C.",
   },
   {
     icon: Calculator,
-    title: "GST Return Filing",
+    title: "GST Returns",
     description:
-      "From GSTR-1 to GSTR-9, we manage the entire GST return cycle, ensuring you get your Input Tax Credit and maintain compliance across multiple states.",
+      "GSTR-1 to GSTR-9 management across multiple states with Input Tax Credit optimization.",
   },
   {
     icon: Landmark,
     title: "Professional Tax",
     description:
-      "Levied by states like Maharashtra and Karnataka, professional tax varies by salary or profession. We handle registrations, deductions, and returns as per state norms.",
+      "State-wise registrations, deductions, and returns as per Maharashtra, Karnataka norms.",
   },
 ];
 
 const Services = () => {
   return (
-    <section id="services" className="py-24 bg-muted">
-      <div className="container mx-auto px-6">
+    <section id="services" className="py-28 bg-gradient-subtle relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gold/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-navy/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-gold uppercase tracking-[0.2em] text-sm font-medium">
+        <div className="text-center max-w-3xl mx-auto mb-20">
+          <span className="inline-block text-gold uppercase tracking-elegant text-sm font-semibold mb-4">
             What We Do
           </span>
-          <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-4 mb-6">
+          <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6 text-balance">
             Comprehensive Tax Services
           </h2>
-          <p className="text-muted-foreground leading-relaxed">
-            We provide end-to-end tax compliance and advisory services for individuals, 
+          <div className="divider-gold mx-auto mb-6" />
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            End-to-end tax compliance and advisory services for individuals, 
             professionals, and businesses across every tax category in India.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
           {services.map((service, index) => (
             <div
               key={service.title}
-              className="group bg-card p-6 rounded-lg shadow-card hover:shadow-elegant transition-all duration-300 border border-border hover:border-gold/30"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group relative bg-card p-6 rounded-2xl shadow-sm-custom hover:shadow-card transition-all duration-500 border border-border/50 hover:border-gold/30 hover-lift cursor-pointer"
+              style={{ animationDelay: `${index * 0.05}s` }}
             >
-              <div className="w-12 h-12 bg-navy/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-gold/10 transition-colors duration-300">
-                <service.icon className="w-6 h-6 text-navy group-hover:text-gold transition-colors duration-300" />
+              {/* Icon */}
+              <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-navy/10 to-navy/5 flex items-center justify-center mb-5 group-hover:from-gold/20 group-hover:to-gold/5 transition-all duration-500">
+                <service.icon className="w-7 h-7 text-navy group-hover:text-gold transition-colors duration-500" />
               </div>
-              <h3 className="font-serif text-lg text-foreground mb-2">
+              
+              {/* Content */}
+              <h3 className="font-serif text-xl text-foreground mb-2 flex items-center justify-between">
                 {service.title}
+                <ArrowUpRight className="w-4 h-4 text-muted-foreground/30 group-hover:text-gold group-hover:translate-x-1 group-hover:-translate-y-1 transition-all duration-300" />
               </h3>
               <p className="text-muted-foreground leading-relaxed text-sm">
                 {service.description}
               </p>
+
+              {/* Hover accent */}
+              <div className="absolute bottom-0 left-6 right-6 h-0.5 bg-gradient-to-r from-transparent via-gold to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
           ))}
         </div>

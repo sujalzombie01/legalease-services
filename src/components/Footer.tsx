@@ -1,40 +1,44 @@
-import { Calculator, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { Calculator, Facebook, Twitter, Linkedin, Instagram, ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  
   return (
-    <footer className="bg-navy-dark py-16">
-      <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-navy-dark pt-20 pb-8 relative overflow-hidden">
+      {/* Background decoration */}
+      <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-gold/5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Brand */}
-          <div>
-            <a href="#home" className="flex items-center gap-3 mb-6">
-              <Calculator className="w-8 h-8 text-gold" />
+          <div className="lg:col-span-1">
+            <a href="#home" className="flex items-center gap-4 mb-6 group">
+              <div className="w-12 h-12 bg-gradient-to-br from-gold to-gold-dark rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-105">
+                <Calculator className="w-6 h-6 text-navy-dark" />
+              </div>
               <div>
-                <span className="font-serif text-lg font-semibold text-cream block">
+                <span className="font-serif text-xl font-bold text-cream block">
                   Hariq & Co
                 </span>
-                <span className="text-xs text-cream/50 tracking-widest uppercase">
-                  Legal Advisory Firm
+                <span className="text-[10px] text-cream/40 tracking-elegant uppercase font-medium">
+                  Legal Advisory
                 </span>
               </div>
             </a>
-            <p className="text-cream/60 text-sm leading-relaxed mb-6">
-              Dedicated to providing hassle-free tax compliance, personalized advisory, 
+            <p className="text-cream/50 text-sm leading-relaxed mb-8">
+              Hassle-free tax compliance, personalized advisory, 
               and complete digital filing support for individuals and businesses.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-navy-light rounded-full flex items-center justify-center hover:bg-gold transition-colors group">
-                <Facebook className="w-5 h-5 text-cream group-hover:text-navy-dark" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-navy-light rounded-full flex items-center justify-center hover:bg-gold transition-colors group">
-                <Twitter className="w-5 h-5 text-cream group-hover:text-navy-dark" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-navy-light rounded-full flex items-center justify-center hover:bg-gold transition-colors group">
-                <Linkedin className="w-5 h-5 text-cream group-hover:text-navy-dark" />
-              </a>
-              <a href="#" className="w-10 h-10 bg-navy-light rounded-full flex items-center justify-center hover:bg-gold transition-colors group">
-                <Instagram className="w-5 h-5 text-cream group-hover:text-navy-dark" />
-              </a>
+            <div className="flex gap-3">
+              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, index) => (
+                <a 
+                  key={index}
+                  href="#" 
+                  className="w-10 h-10 bg-navy-light/50 rounded-xl flex items-center justify-center hover:bg-gold transition-all duration-300 group"
+                >
+                  <Icon className="w-4 h-4 text-cream/70 group-hover:text-navy-dark" />
+                </a>
+              ))}
             </div>
           </div>
 
@@ -44,7 +48,11 @@ const Footer = () => {
             <ul className="space-y-3">
               {["Income Tax Filing", "GST Compliance", "TDS Management", "Capital Gains Tax", "Advance Tax", "Professional Tax"].map((item) => (
                 <li key={item}>
-                  <a href="#services" className="text-cream/60 hover:text-gold transition-colors text-sm">
+                  <a 
+                    href="#services" 
+                    className="text-cream/50 hover:text-gold transition-colors text-sm flex items-center gap-2 group"
+                  >
+                    <span className="w-1 h-1 bg-gold/50 rounded-full group-hover:w-2 transition-all duration-300" />
                     {item}
                   </a>
                 </li>
@@ -56,9 +64,13 @@ const Footer = () => {
           <div>
             <h4 className="font-serif text-lg text-cream mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {["About Us", "Our Team", "Client Testimonials", "Tax Resources", "Blog", "Contact"].map((item) => (
+              {["About Us", "Our Team", "Testimonials", "Tax Resources", "Blog", "Contact"].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-cream/60 hover:text-gold transition-colors text-sm">
+                  <a 
+                    href="#" 
+                    className="text-cream/50 hover:text-gold transition-colors text-sm flex items-center gap-2 group"
+                  >
+                    <span className="w-1 h-1 bg-gold/50 rounded-full group-hover:w-2 transition-all duration-300" />
                     {item}
                   </a>
                 </li>
@@ -68,18 +80,19 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif text-lg text-cream mb-6">Contact Info</h4>
-            <address className="not-italic space-y-3 text-cream/60 text-sm">
-              <p>123 Business Park, Tower B</p>
-              <p>Mumbai, Maharashtra 400001</p>
-              <p className="pt-2">
-                <a href="tel:+919876543210" className="hover:text-gold transition-colors">
+            <h4 className="font-serif text-lg text-cream mb-6">Contact</h4>
+            <address className="not-italic space-y-4 text-cream/50 text-sm">
+              <p>123 Business Park, Tower B<br />Mumbai, Maharashtra 400001</p>
+              <p>
+                <a href="tel:+919876543210" className="hover:text-gold transition-colors flex items-center gap-2">
                   +91 98765 43210
+                  <ArrowUpRight className="w-3 h-3" />
                 </a>
               </p>
               <p>
-                <a href="mailto:info@hariqco.com" className="hover:text-gold transition-colors">
+                <a href="mailto:info@hariqco.com" className="hover:text-gold transition-colors flex items-center gap-2">
                   info@hariqco.com
+                  <ArrowUpRight className="w-3 h-3" />
                 </a>
               </p>
             </address>
@@ -87,21 +100,21 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-navy-light">
+        <div className="pt-8 border-t border-navy-light/30">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-cream/40 text-sm">
-              © 2026 Hariq & Co Legal Advisory Firm. All rights reserved.
+            <p className="text-cream/30 text-sm">
+              © {currentYear} Hariq & Co Legal Advisory Firm. All rights reserved.
             </p>
-            <div className="flex gap-6">
-              <a href="#" className="text-cream/40 hover:text-gold text-sm transition-colors">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-cream/40 hover:text-gold text-sm transition-colors">
-                Terms of Service
-              </a>
-              <a href="#" className="text-cream/40 hover:text-gold text-sm transition-colors">
-                Disclaimer
-              </a>
+            <div className="flex gap-8">
+              {["Privacy Policy", "Terms of Service", "Disclaimer"].map((item) => (
+                <a 
+                  key={item}
+                  href="#" 
+                  className="text-cream/30 hover:text-gold text-sm transition-colors"
+                >
+                  {item}
+                </a>
+              ))}
             </div>
           </div>
         </div>
